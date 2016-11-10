@@ -1,0 +1,19 @@
+{
+    "name": "digger-app",
+    "version": "0.1.0",
+    "description": "",
+    "author": "",
+    "main": "src/index.js",
+    "ruff": {
+        "boards": {
+            "ruff-mbd-v1": "^4.1.4",
+            "*": "*"
+        },
+        "dependencies": {
+            "led-gpio": "^3.0.2",
+            "digger-driver": "*",
+            "home": "^0.1.8"
+        },
+        "devDependencies": {}
+    }
+}

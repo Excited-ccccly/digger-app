@@ -1,0 +1,58 @@
+{
+    "models": [],
+    "inputs": {
+        "diggerIO": {
+            "type": "gpio",
+            "args": {
+                "direction": "out",
+                "level": "low"
+            }
+        },
+
+        "leftForward": {
+            "type": "gpio",
+            "args": {
+                "direction": "out",
+                "level": "low"
+            }
+        },
+
+        "leftBack": {
+            "type": "gpio",
+            "args": {
+                "direction": "out",
+                "level": "low"
+            }
+        },
+
+        "rightForward": {
+            "type": "gpio",
+            "args": {
+                "direction": "out",
+                "level": "low"
+            }
+        },
+
+        "rightBack": {
+            "type": "pwm",
+            "args": {
+                "frequency": "200"
+            }
+        },
+
+        "turnLeft": {
+            "type": "pwm",
+            "args": {
+                "frequency": "200"
+            }
+        },
+
+
+        "turnRight": {
+            "type": "pwm",
+            "args": {
+                "frequency": "200"
+            }
+        }
+    }
+}

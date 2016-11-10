@@ -1,0 +1,87 @@
+{
+    "devices": [
+        {
+            "id": "led0",
+            "model": "led-gpio",
+            "driver": "led-gpio",
+            "inputs": {
+                "gpio": {
+                    "type": "gpio",
+                    "args": {
+                        "direction": "out",
+                        "level": "low",
+                        "activeLow": false
+                    }
+                }
+            }
+        },
+        {
+            "id": "led1",
+            "model": "led-gpio",
+            "driver": "led-gpio",
+            "inputs": {
+                "gpio": {
+                    "type": "gpio",
+                    "args": {
+                        "direction": "out",
+                        "level": "low",
+                        "activeLow": false
+                    }
+                }
+            }
+        },
+        {
+            "id": "digger",
+            "model": "digger",
+            "driver": "digger-driver",
+            "inputs": {
+                "diggerIO": {
+                    "type": "gpio",
+                    "args": {
+                        "direction": "out",
+                        "level": "low"
+                    }
+                },
+                "leftForward": {
+                    "type": "gpio",
+                    "args": {
+                        "direction": "out",
+                        "level": "low"
+                    }
+                },
+                "leftBack": {
+                    "type": "gpio",
+                    "args": {
+                        "direction": "out",
+                        "level": "low"
+                    }
+                },
+                "rightForward": {
+                    "type": "gpio",
+                    "args": {
+                        "direction": "out",
+                        "level": "low"
+                    }
+                },
+                "rightBack": {
+                    "type": "pwm",
+                    "args": {
+                        "frequency": "200"
+                    }
+                },
+                "turnLeft": {
+                    "type": "pwm",
+                    "args": {
+                        "frequency": "200"
+                    }
+                },
+                "turnRight": {
+                    "type": "pwm",
+                    "args": {
+                        "frequency": "200"
+                    }
+                }
+            }
+        }
+    ]
+}

@@ -1,0 +1,19 @@
+{
+    "sessions": {
+        "ruffd/lan/192.168.31.178": {
+            "name": "192.168.31.178",
+            "board": "ruff-mbd-v1",
+            "address": "192.168.31.178"
+        },
+        "ruffd/lan/192.168.31.94": {
+            "name": "192.168.31.94",
+            "board": "ruff-mbd-v1",
+            "address": "192.168.31.94"
+        },
+        "ruffd/lan/192.168.78.1": {
+            "name": "192.168.78.1",
+            "board": "ruff-mbd-v1",
+            "address": "192.168.78.1"
+        }
+    }
+}
