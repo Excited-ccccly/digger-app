@@ -9,6 +9,11 @@ $.ready(function (error) {
         return;
     }
     digger = $('#digger');
+
+    server.use('/', Server.static('static'));
+    server.get('/', function(req, res) {
+        return ({});
+    })
     // 对Ruff板上的 Http服务器的`/start-diggering`访问，命令挖掘机向前行
     server.get('/start-diggering', function () {
         digger.startDiggering(function(){

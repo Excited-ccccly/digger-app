@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <script type="text/javascript" src="js/app.css"></script>
+    <script type="text/javascript" src="js/thumbs.0.6.0.min.css"></script>
+    <title>Digger</title>
+  </head>
+  <body oncontextmenu="return false">
+    <div class=cable></div>
+    <div class=controller>
+      <div class=centerBlue onmousedown= 'Center()' onmouseup= 'lostCenter()' ontouchstart='Center()' ontouchend='lostCenter()' >
+        <div class=centerLeft></div>   
+        <div class=centerRight></div>  
+      </div>
+      <div class=centerStart>
+        <div class=SLeft></div>
+        <div class=SRight></div>
+      </div>
+      <div class=centerSelect>
+        <div class=SLeft></div>
+        <div class=SRight></div>
+      </div>
+    
+      <div class=controllerLeft>
+        <div class=circle></div>
+        <div class=crossCenter>
+          <div class=crossTop onmousedown= 'Up()' onmouseup= 'lostUp()' ontouchstart='Up()' ontouchend='lostUp()'></div>
+          <div class=crossBottom onmousedown= 'Down()' onmouseup= 'lostDown()' ontouchstart='Down()' ontouchend='lostDown()'></div>
+          <div class=crossLeft onmousedown= 'Left()' onmouseup= 'lostLeft()' ontouchstart='Left()' ontouchend='lostLeft()'></div>
+          <div class=crossRight onmousedown= 'Right()' onmouseup= 'lostRight()' ontouchstart='Right()' ontouchend='lostRight()'></div>
+          <div class=crossCircle></div>
+        </div>
+      </div>
+      <div class=controllerRight>
+        <div class=backButtonCenter>
+          <div class=cornerLeft onmousedown= 'A()' onmouseup= 'lostA()' ontouchstart='A()' ontouchend='lostA()'></div>
+          <div class=cornerRight onmousedown= 'B()' onmouseup= 'lostB()' ontouchstart='B()' ontouchend='lostB()'></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

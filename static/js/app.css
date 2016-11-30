@@ -1,0 +1,106 @@
+var host = 'http://192.168.78.1:6318';
+/*var center = document.getElementsByClassName('centerBlue');
+var top = document.getElementsByClassName('crossTop');
+var bottom = document.getElementsByClassName('crossBottom');
+var left = document.getElementsByClassName('crossLeft');
+var right = document.getElementsByClassName('crossRight');
+var cornerLeft = document.getElementsByClassName('cornerLeft');
+var cornerRight = document.getElementsByClassName('cornerRight');
+
+center.addEventListener('touchstart', Center(), false);
+center.addEventListener('touchend', lostCenter(), false);*/
+function A() {
+  httpGetAsync(host + '/turn-left', function () {
+    console.log('turn-left');
+  });
+}
+
+function lostA() {
+  httpGetAsync(host + '/stop-turn-around', function () {
+    console.log('stop-turn-around');
+  });
+}
+
+function B() {
+  httpGetAsync(host + '/turn-right', function () {
+    console.log('turn-right');
+  });
+}
+
+function lostB() {
+  httpGetAsync(host + '/stop-turn-around', function () {
+    console.log('stop-turn-around');
+  });
+}
+
+function Up() {
+  httpGetAsync(host + '/move-forward', function () {
+    console.log('move-forward');
+  });
+}
+
+function lostUp() {
+  httpGetAsync(host + '/stop-moving', function () {
+    console.log('stop-moving');
+  });
+}
+
+function Down() {
+  httpGetAsync(host + '/move-back', function () {
+    console.log('move-back');
+  });
+}
+
+function lostDown() {
+  httpGetAsync(host + '/stop-moving', function () {
+    console.log('stop-moving');
+  });
+}
+
+function Left() {
+  httpGetAsync(host + '/move-left', function () {
+    console.log('move-left');
+  });
+}
+
+function lostLeft() {
+  httpGetAsync(host + '/stop-moving', function () {
+    console.log('stop-moving');
+  });
+}
+
+function Right() {
+  httpGetAsync(host + '/move-right', function () {
+    console.log('move-right');
+  });
+}
+
+function lostRight() {
+  httpGetAsync(host + '/stop-moving', function () {
+    console.log('stop-moving');
+  });
+}
+
+function Center() {
+  httpGetAsync(host + '/start-diggering', function () {
+    console.log('start-diggering');
+  });
+}
+
+function lostCenter() {
+  httpGetAsync(host + '/stop-diggering', function () {
+    console.log('stop-diggering');
+  });
+}
+
+
+
+function httpGetAsync(theUrl, callback) {
+  var xmlHttp = new XMLHttpRequest();
+  xmlHttp.onreadystatechange = function () {
+    if (xmlHttp.readyState == 4 && xmlHttp.status == 200)
+      callback(xmlHttp.responseText);
+  }
+  xmlHttp.open("GET", theUrl, true); // true for asynchronous 
+  xmlHttp.send(null);
+}
